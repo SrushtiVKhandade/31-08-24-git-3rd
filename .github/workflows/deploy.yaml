@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 env:
-  ECR_REPOSITORY: helloecr
+  ECR_REPOSITORY: shnewecr
   AWS_REGION: ap-south-1
   EKS_CLUSTER_NAME: cluster-10  
   KUBERNETES_NAMESPACE: default
