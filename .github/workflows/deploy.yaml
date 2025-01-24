@@ -62,4 +62,4 @@ jobs:
 
     - name: Deploy to EKS
       run: |
-        kubectl set image deployment/regapp-deployment -n $KUBERNETES_NAMESPACE regapp=$ECR_REGISTRY/$ECR_REPOSITORY:latest  # Replace 'your-deployment-name' and 'your-container-name' with your actual deployment and container names
+         kubectl create deployment regapp-deployment --image=741448935198.dkr.ecr.ap-south-1.amazonaws.com/usecase-3-repo:latest --replicas=2 
