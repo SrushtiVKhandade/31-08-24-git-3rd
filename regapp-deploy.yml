@@ -1,24 +1,24 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: regapp-deployment
+  name: regapp-deployment2
   labels: 
-     app: regapp
+     app: webapp
 
 spec:
   replicas: 2 
   selector:
     matchLabels:
-      app: regapp
+      app: webapp
 
   template:
     metadata:
       labels:
-        app: regapp
+        app: webapp
     spec:
       containers:
-      - name: regapp
-        image: ashfaque9x/regapp
+      - name: webapp
+        image: 741448935198.dkr.ecr.ap-south-1.amazonaws.com/helloecr:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
