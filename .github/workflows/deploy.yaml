@@ -9,6 +9,7 @@ env:
   AWS_REGION: ap-south-1
   EKS_CLUSTER_NAME: cluster-10  
   KUBERNETES_NAMESPACE: default
+  AWS_ACCOUNT_ID: 741448935198
 
 jobs:
   build:
