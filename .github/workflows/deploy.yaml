@@ -62,4 +62,4 @@ jobs:
 
     - name: Deploy to EKS
       run: |
-        kubectl set image deployment/your-deployment-name -n $KUBERNETES_NAMESPACE your-container-name=$ECR_REGISTRY/$ECR_REPOSITORY:latest  # Replace 'your-deployment-name' and 'your-container-name' with your actual deployment and container names
+        kubectl set image deployment/deployment.yml -n $KUBERNETES_NAMESPACE regapp=$ECR_REGISTRY/$ECR_REPOSITORY:latest  # Replace 'your-deployment-name' and 'your-container-name' with your actual deployment and container names
