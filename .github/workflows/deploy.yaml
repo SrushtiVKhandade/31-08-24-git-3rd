@@ -62,6 +62,6 @@ jobs:
 
     - name: Deploy to EKS
       run: |
-         kubectl rollout restart deployment/regapp-deployment
-        # kubectl create deployment regapp-deployment --image=741448935198.dkr.ecr.ap-south-1.amazonaws.com/usecase-3-repo:latest --replicas=2
-        # kubectl expose deployment regapp-deployment --port=8080 --target-port=8080 --name=regapp-service --type=LoadBalancer
+       #  kubectl rollout restart deployment/regapp-deployment
+         kubectl apply -f regapp-deploy.yml
+         kubectl apply -f regapp-service.yml
